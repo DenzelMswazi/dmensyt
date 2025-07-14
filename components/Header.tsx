@@ -6,13 +6,17 @@ import SearchBar from './SearchBar';
 import CartIcon from './CartIcon';
 import FavouriteButton from './FavouriteButton';
 import SignIn from './SignIn';
+import MobileMenu from './MobileMenu';
 
 const Header = () => {
   return (
     <header className='bg-white py-5 border-b border-gray-200'>
         <Container className='flex items-center justify-between'>
             {/* Logo */}
-            <Logo />
+            <div className='w-auto md:w-1/3 flex items-center gap-2.5 justify-start md:gap-0'>
+               <MobileMenu />
+              <Logo />
+              </div>
             <HeaderMenu />
             <div className='w-auto md:w-1/3 flex items-center justify-end gap-5'>
               <SearchBar />
