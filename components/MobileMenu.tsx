@@ -5,7 +5,7 @@ const MobileMenu = () => {
   return (
     <>
     <button>
-        <AlignLeft />
+        <AlignLeft className='hover:text-darkColor hoverEffect md:hidden'/>
     </button>
     </>
   )
