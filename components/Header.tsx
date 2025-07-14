@@ -3,6 +3,8 @@ import Container from './Container';
 import Logo from './Logo';
 import HeaderMenu from './HeaderMenu';
 import SearchBar from './SearchBar';
+import CartIcon from './CartIcon';
+import FavouriteButton from './FavouriteButton';
 
 const Header = () => {
   return (
@@ -13,6 +15,8 @@ const Header = () => {
             <HeaderMenu />
             <div>
               <SearchBar />
+              <CartIcon />
+              <FavouriteButton />
             </div>
             {/* NavButton */}
         </Container>
