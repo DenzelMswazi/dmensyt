@@ -2,6 +2,7 @@ import React from 'react'
 import Container from './Container';
 import Logo from './Logo';
 import HeaderMenu from './HeaderMenu';
+import SearchBar from './SearchBar';
 
 const Header = () => {
   return (
@@ -10,7 +11,9 @@ const Header = () => {
             {/* Logo */}
             <Logo />
             <HeaderMenu />
-            <div>Others</div>
+            <div>
+              <SearchBar />
+            </div>
             {/* NavButton */}
         </Container>
     </header>
