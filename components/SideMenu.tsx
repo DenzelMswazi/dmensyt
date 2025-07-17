@@ -1,4 +1,9 @@
-import React from 'react'
+import React from 'react';
+
+interface SidebarProps {
+    isOpen: boolean;
+    onClose: () => void;
+}
 
 const SideMenu = () => {
   return (
