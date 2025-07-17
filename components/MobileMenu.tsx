@@ -8,10 +8,10 @@ const MobileMenu = () => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
   return (
     <>
-    <button>
+    <button onClick={() => setIsSideBarOpen(!isSideBarOpen)}>
         <AlignLeft className='hover:text-darkColor hoverEffect md:hidden hover:cursor-pointer'/>
     </button>
-    <SideMenu />
+    <div><SideMenu /></div>
     </>
   )
 }
