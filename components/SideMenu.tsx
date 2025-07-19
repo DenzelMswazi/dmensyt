@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import Logo from './Logo';
 import { X } from 'lucide-react';
+import { headerData } from '@/constants/data';
 
 interface SidebarProps {
     isOpen: boolean;
@@ -17,7 +18,14 @@ const SideMenu: FC<SidebarProps> = ({ isOpen, onClose}) => {
                 <X />
                 </button>
             </div>
-            <div></div>
+
+            <div>
+                {headerData?.map((item) => (
+                    <Link>
+                    {item.title}
+                    </Link>
+                ))}
+            </div>
         </div>
     </div>
   )
