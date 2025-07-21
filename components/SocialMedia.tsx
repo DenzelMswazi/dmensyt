@@ -1,64 +1,78 @@
-import { Facebook, Github, Instagram, Slack, Twitter } from 'lucide-react';
-import React from 'react'
-import { Tooltip, TooltipProvider, TooltipTrigger } from './ui/tooltip';
+"use client";
+
+import React from "react";
+import {
+  FaInstagram,
+  FaFacebook,
+  FaTwitter,
+  FaGithub,
+  FaWhatsapp,
+  FaTelegram,
+  FaSlack,
+  FaSnapchatGhost,
+} from "react-icons/fa";
+import { Tooltip, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
+import Link from "next/link";
 
 const socialLink = [
-    {
-        title: "instagram",
-        href: "https://www.instagram.com/dmens/",
-        icon: <Instagram className='w-5 h-5' />,
-    },
-    {
-        title: "facebook",
-        href: "https://www.facebook.com/dmensyt",
-        icon: <Facebook className='w-5 h-5' />,
-    },
-    {
-        title: "twitter",
-        href: "https://twitter.com/dmensyt",
-        icon: <Twitter className='w-5 h-5' />,
-    },
-    {
-        title: "Github",
-        href: "",
-        icon: <Github className='w-5 h-5' />,
-    },
-    {
-        title: "Whatsapp",
-        href: "",
-        icon: <Whatsapp className='w-5 h-5' />,
-    },
-    {
-        title: "Telegram",
-        href: "",
-        icon: <Telegram className='w-5 h-5' />,
-    },
-    {
-        title: "Slack",
-        href: "",
-        icon: <Slack className='w-5 h-5' />,
-    },
-    {
-        title: "Snapchat",
-        href: "",
-        icon: <Snapchat className='w-5 h-5' />,
-    }
-]
+  {
+    title: "Instagram",
+    href: "https://www.instagram.com/dmens/",
+    icon: FaInstagram,
+  },
+  {
+    title: "Facebook",
+    href: "https://www.facebook.com/dmensyt",
+    icon: FaFacebook,
+  },
+  {
+    title: "Twitter",
+    href: "https://twitter.com/dmensyt",
+    icon: FaTwitter,
+  },
+  {
+    title: "Github",
+    href: "",
+    icon: FaGithub,
+  },
+  {
+    title: "Whatsapp",
+    href: "",
+    icon: FaWhatsapp,
+  },
+  {
+    title: "Telegram",
+    href: "",
+    icon: FaTelegram,
+  },
+  {
+    title: "Slack",
+    href: "",
+    icon: FaSlack,
+  },
+  {
+    title: "Snapchat",
+    href: "",
+    icon: FaSnapchatGhost,
+  },
+];
 
 const SocialMedia = () => {
   return (
     <TooltipProvider>
-       <div>
-        {socialLink?.map((item) => (
-            <Tooltip>
-                <TooltipTrigger>
-                    
-                </TooltipTrigger>
-            </Tooltip>
+      <div className="flex gap-2">
+        {socialLink.map(({ title, href, icon: Icon }) => (
+          <Tooltip key={title}>
+            <TooltipTrigger asChild>
+              <Link href={href} aria-label={title}>
+                <Icon className="w-8 h-8" />
+              </Link>
+            </TooltipTrigger>
+          </Tooltip>
         ))}
-        </div> 
+      </div>
     </TooltipProvider>
-  )
-}
+  );
+};
 
 export default SocialMedia;
