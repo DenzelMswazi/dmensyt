@@ -11,7 +11,7 @@ import {
   FaSlack,
   FaSnapchatGhost,
 } from "react-icons/fa";
-import { Tooltip, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
@@ -63,6 +63,9 @@ const SocialMedia = ({className,iconClassName,tooltipClassName}:Props) => {
                 <Icon className="w-8 h-8" />
               </Link>
             </TooltipTrigger>
+            <TooltipContent className={cn("bg-white text-darkColor font-semibold", tooltipClassName)}>
+                {title}
+            </TooltipContent>
           </Tooltip>
         ))}
       </div>
