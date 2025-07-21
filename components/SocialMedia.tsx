@@ -12,7 +12,14 @@ import {
   FaSnapchatGhost,
 } from "react-icons/fa";
 import { Tooltip, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
+
+interface Props {
+    className?: string;
+    iconClassName?: string;
+    tooltipClassName?: string;
+}
 
 const socialLink = [
   {
@@ -31,24 +38,9 @@ const socialLink = [
     icon: FaTwitter,
   },
   {
-    title: "Github",
-    href: "",
-    icon: FaGithub,
-  },
-  {
     title: "Whatsapp",
     href: "",
     icon: FaWhatsapp,
-  },
-  {
-    title: "Telegram",
-    href: "",
-    icon: FaTelegram,
-  },
-  {
-    title: "Slack",
-    href: "",
-    icon: FaSlack,
   },
   {
     title: "Snapchat",
@@ -57,14 +49,17 @@ const socialLink = [
   },
 ];
 
-const SocialMedia = () => {
+const SocialMedia = ({className,iconClassName,tooltipClassName}:Props) => {
   return (
     <TooltipProvider>
-      <div className="flex gap-2">
+      <div className={cn("flex items-center gap-3.5", className)}>
         {socialLink.map(({ title, href, icon: Icon }) => (
           <Tooltip key={title}>
             <TooltipTrigger asChild>
-              <Link href={href} aria-label={title}>
+              <Link href={href} 
+              aria-label={title} 
+              rel="noopener noreferrer"
+              className={cn("p-2 border rounded-full hover:text-white hover:border-shop_light_green hoverEffect", iconClassName)}>
                 <Icon className="w-8 h-8" />
               </Link>
             </TooltipTrigger>
