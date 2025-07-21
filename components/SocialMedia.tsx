@@ -1,4 +1,4 @@
-import { Facebook, Github, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Github, Instagram, Slack, Twitter } from 'lucide-react';
 import React from 'react'
 
 const socialLink = [
@@ -21,6 +21,26 @@ const socialLink = [
         title: "Github",
         href: "",
         icon: <Github className='w-5 h-5' />,
+    },
+    {
+        title: "Whatsapp",
+        href: "",
+        icon: <Whatsapp className='w-5 h-5' />,
+    },
+    {
+        title: "Telegram",
+        href: "",
+        icon: <Telegram className='w-5 h-5' />,
+    },
+    {
+        title: "Slack",
+        href: "",
+        icon: <Slack className='w-5 h-5' />,
+    },
+    {
+        title: "Snapchat",
+        href: "",
+        icon: <Snapchat className='w-5 h-5' />,
     }
 ]
 
