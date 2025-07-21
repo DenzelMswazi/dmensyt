@@ -1,5 +1,6 @@
 import { Facebook, Github, Instagram, Slack, Twitter } from 'lucide-react';
 import React from 'react'
+import { TooltipProvider } from './ui/tooltip';
 
 const socialLink = [
     {
@@ -46,7 +47,9 @@ const socialLink = [
 
 const SocialMedia = () => {
   return (
-    <div>SocialMedia</div>
+    <TooltipProvider>
+        
+    </TooltipProvider>
   )
 }
 
