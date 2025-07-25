@@ -25,12 +25,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <ClerkProvider>
+       <html lang="en">
       <body className={`${poppins.variable} antialiased`}>
         <Header />
         {children}
         <Footer />
       </body>
     </html>
+    </ClerkProvider>
   );
 }
