@@ -7,8 +7,11 @@ import CartIcon from './CartIcon';
 import FavouriteButton from './FavouriteButton';
 import SignIn from './SignIn';
 import MobileMenu from './MobileMenu';
+import { Currency } from 'lucide-react';
+import { currentUser } from '@clerk/nextjs/server';
 
-const Header = () => {
+const Header = async() => {
+  const user = await currentUser();
   return (
     <header className='bg-white py-5 border-b border-gray-200'>
         <Container className='flex items-center justify-between text-lightColor'>
