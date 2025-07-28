@@ -9,7 +9,7 @@ import SignIn from './SignIn';
 import MobileMenu from './MobileMenu';
 import { Currency } from 'lucide-react';
 import { currentUser } from '@clerk/nextjs/server';
-import { ClerkLoaded } from '@clerk/nextjs';
+import { ClerkLoaded, UserButton } from '@clerk/nextjs';
 import { SignedIn } from '@clerk/nextjs';
 
 const Header = async() => {
@@ -30,7 +30,9 @@ const Header = async() => {
               <CartIcon />
               <FavouriteButton />
               <ClerkLoaded> 
-                <SignedIn></SignedIn>
+                <SignedIn>
+                  <UserButton />
+                </SignedIn>
                 <SignIn />
                 </ClerkLoaded>
             </div>
