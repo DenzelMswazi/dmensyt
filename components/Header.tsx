@@ -33,7 +33,7 @@ const Header = async() => {
                 <SignedIn>
                   <UserButton />
                 </SignedIn>
-                <SignIn />
+                {!user && <SignIn />}
                 </ClerkLoaded>
             </div>
             {/* NavButton */}
