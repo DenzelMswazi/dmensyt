@@ -10,6 +10,7 @@ import MobileMenu from './MobileMenu';
 import { Currency } from 'lucide-react';
 import { currentUser } from '@clerk/nextjs/server';
 import { ClerkLoaded } from '@clerk/nextjs';
+import { SignedIn } from '@clerk/nextjs';
 
 const Header = async() => {
   const user = await currentUser();
@@ -28,7 +29,8 @@ const Header = async() => {
               <SearchBar />
               <CartIcon />
               <FavouriteButton />
-              <ClerkLoaded>  
+              <ClerkLoaded> 
+                <SignedIn></SignedIn>
                 <SignIn />
                 </ClerkLoaded>
             </div>
