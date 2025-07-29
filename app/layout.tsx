@@ -29,7 +29,7 @@ export default function RootLayout({
        <html lang="en">
       <body className={`${poppins.variable} antialiased`}>
         <Header />
-        <main> 
+        <main className="flex-1"> 
           {children}
           </main>
         <Footer />
