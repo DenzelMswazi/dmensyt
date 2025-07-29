@@ -1,5 +1,6 @@
 import React from 'react'
 import { Title } from './ui/text';
+import Link from 'next/link';
 
 const HomeBanner = () => {
   return (
@@ -9,6 +10,7 @@ const HomeBanner = () => {
                 Suit Up Like a Pro - Shop Dmens <br />
                 Your Jersey. Your Team. Your Style.
             </Title>
+            <Link href={"/shop"}></Link>
         </div>
         <div></div>
         </div>
