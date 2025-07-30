@@ -7,8 +7,8 @@ import { banner_1 } from '@/images';
 const HomeBanner = () => {
   return (
     <div className='py-16 md:py-0 bg-shop-light-pink rounded-lg px-10 lg:px-24 flex items-center justify-between'>
-        <div>
-            <Title className='mb-5'>
+        <div className="space-y-4">
+            <Title>
                 Suit Up Like a Pro <br />
                 Your Jersey. Your Team. Your Style.
             </Title>
