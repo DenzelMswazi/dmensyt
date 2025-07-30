@@ -7,7 +7,6 @@ import CartIcon from './CartIcon';
 import FavouriteButton from './FavouriteButton';
 import SignIn from './SignIn';
 import MobileMenu from './MobileMenu';
-import { Currency } from 'lucide-react';
 import { currentUser } from '@clerk/nextjs/server';
 import { ClerkLoaded, UserButton } from '@clerk/nextjs';
 import { SignedIn } from '@clerk/nextjs';
