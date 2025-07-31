@@ -60,7 +60,7 @@ const SocialMedia = ({className,iconClassName,tooltipClassName}:Props) => {
               aria-label={title} 
               rel="noopener noreferrer"
               className={cn("p-2 border rounded-full hover:text-white hover:border-shop_light_green hoverEffect", iconClassName)}>
-                <Icon className="w-8 h-8" />
+                <Icon className="w-6 h-6" />
               </Link>
             </TooltipTrigger>
             <TooltipContent className={cn("bg-white text-darkColor font-semibold border border-shop_light_green", tooltipClassName)}>

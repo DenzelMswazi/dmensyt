@@ -15,7 +15,7 @@ const Footer = () => {
               <p>Discover authentic jerseys, premium quality, and unbeatable prices. From legendary classics to the latest releases, we bring your team spirit to life. Shop with confidence, wear with pride.
               </p>
               <SocialMedia className='text-darkColor/50'
-               iconClassName='border-darkColor hover:border-shop_dark_green hover:text-shop_dark_green'
+               iconClassName='border-darkColor hover:border-shop_light_green hover:text-shop_light_green'
                tooltipClassName='bg-darkColor text-white'/>
             </div>
             <div></div>
