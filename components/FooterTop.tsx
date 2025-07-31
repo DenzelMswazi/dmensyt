@@ -1,4 +1,4 @@
-import { MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import React from 'react'
 import { FaBuilding, FaWhatsapp } from 'react-icons/fa';
 
@@ -28,6 +28,13 @@ const data: ContactItemsData[] = [
         subTitle: "Mon - Sat: 8:00 AM - 7:00 PM",
         icon: (
             <FaBuilding className='h-6 w-6 text-gray-600 group-hover:text-primary transition-colors'/>
+        ),
+    },
+    {
+        title: "Email Us",
+        subTitle: "dmens@sales.co.ke",
+        icon: (
+            <Mail className='h-6 w-6 text-gray-600 group-hover:text-primary transition-colors'/>
         )
     }
 ]
