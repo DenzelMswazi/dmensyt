@@ -9,8 +9,8 @@ const Footer = () => {
         <footer className='bg-white border-t'>
         <Container>
           <FooterTop />
-          <div>
-            <div>
+          <div className='py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+            <div className='space-y-4'>
               <Logo />
               <p>Discover authentic jerseys, premium quality, and unbeatable prices. From legendary classics to the latest releases, we bring your team spirit to life. Shop with confidence, wear with pride.
               </p>
