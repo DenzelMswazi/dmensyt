@@ -4,11 +4,11 @@ import FooterTop from './FooterTop';
 
 const Footer = () => {
   return (
-    <Container>
-        <footer>
+        <footer className='mb-4'>
+        <Container>
           <FooterTop />
+          </Container>
         </footer>
-        </Container>
   )
 }
 
