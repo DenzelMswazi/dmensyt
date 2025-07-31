@@ -13,7 +13,6 @@ import { SignedIn } from '@clerk/nextjs';
 
 const Header = async() => {
   const user = await currentUser();
-  console.log(user, "user");
 
   return (
     <header className='bg-white py-5'>
