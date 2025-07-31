@@ -41,8 +41,15 @@ const data: ContactItemsData[] = [
 
 const FooterTop = () => {
   return (
-    <div>FooterTop</div>
+    <div>
+        {data.map((item, index) => (
+           <div>
+             {item?.icon}
+           </div>
+        ))}
+    </div>
   )
 }
+
 
 export default FooterTop;
