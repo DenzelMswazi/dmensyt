@@ -8,7 +8,7 @@ const Title = ({children, className}: { children:React.ReactNode; className?: st
 
 const subText = ({children, className}: {children:React.ReactNode; className?: string}) => {
     return (
-        <p className={cn("text-gray-600 text-sm")}>{children}</p>
+        <p className={cn("text-gray-600 text-sm", className)}>{children}</p>
     )
 }
-export { Title };
+export { Title, subText };
