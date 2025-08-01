@@ -6,7 +6,7 @@ const Title = ({children, className}: { children:React.ReactNode; className?: st
 );
 };
 
-const subText = () => {
+const subText = ({children, className}: {children:React.ReactNode; className?: string}) => {
     return (
         <p>{children}</p>
     )
