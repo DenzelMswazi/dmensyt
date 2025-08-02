@@ -3,7 +3,9 @@ import Container from './Container';
 import FooterTop from './FooterTop';
 import Logo from './Logo';
 import SocialMedia from './SocialMedia';
-import { SubText } from './ui/text';
+import { SubText, SubTitle } from './ui/text';
+import { quickLinksData } from '@/constants/data';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -19,7 +21,16 @@ const Footer = () => {
                iconClassName='border-darkColor hover:border-shop_light_green hover:text-shop_light_green'
                tooltipClassName='bg-darkColor text-white'/>
             </div>
-            <div></div>
+            <div>
+              <SubTitle>Quick Links</SubTitle>
+              <ul className='space-y-3 mt-4'>
+                {quickLinksData.map((item)=> (
+                  <li key={item?.title}>
+                    <Link href={item?.href}>{item?.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
             <div></div>
             <div></div>
           </div>
