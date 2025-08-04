@@ -6,6 +6,8 @@ import SocialMedia from './SocialMedia';
 import { SubText, SubTitle } from './ui/text';
 import { categoriesData, quickLinksData } from '@/constants/data';
 import Link from 'next/link';
+import { Input } from './ui/input';
+import { Button } from './ui/button';
 
 const Footer = () => {
   return (
@@ -44,6 +46,10 @@ const Footer = () => {
             <div>
               <SubTitle>Newsletter</SubTitle>
               <SubText className='mt-4'>Subscribe to our newsletter for the latest updates and exclusive offers.</SubText>
+              <form>
+                <Input placeholder="Enter your Email"/>
+                <Button>Subscribe</Button>
+              </form>
             </div>
           </div>
           </Container>
