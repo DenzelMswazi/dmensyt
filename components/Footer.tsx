@@ -43,12 +43,12 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div>
+            <div className='space-y-4'>
               <SubTitle>Newsletter</SubTitle>
               <SubText className='mt-4'>Subscribe to our newsletter for the latest updates and exclusive offers.</SubText>
-              <form>
+              <form className='space-y-3'>
                 <Input placeholder="Enter your Email"/>
-                <Button>Subscribe</Button>
+                <Button className='w-full'>Subscribe</Button>
               </form>
             </div>
           </div>
