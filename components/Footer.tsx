@@ -26,7 +26,7 @@ const Footer = () => {
               <ul className='space-y-3 mt-4'>
                 {quickLinksData.map((item)=> (
                   <li key={item?.title}>
-                    <Link href={item?.href}>{item?.title}</Link>
+                    <Link href={item?.href className="hover:text-shop_light_green hoverEffect font-medium"}>{item?.title}</Link>
                   </li>
                 ))}
               </ul>
