@@ -43,6 +43,7 @@ const Footer = () => {
             </div>
             <div>
               <SubTitle>Newsletter</SubTitle>
+              <SubText className='mt-4'>Subscribe to our newsletter for the latest updates and exclusive offers.</SubText>
             </div>
           </div>
           </Container>
