@@ -41,7 +41,9 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div></div>
+            <div>
+              <SubTitle>Newsletter</SubTitle>
+            </div>
           </div>
           </Container>
         </footer>
