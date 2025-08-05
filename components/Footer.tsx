@@ -47,11 +47,14 @@ const Footer = () => {
               <SubTitle>Newsletter</SubTitle>
               <SubText className='mt-4'>Subscribe to our newsletter for the latest updates and exclusive offers.</SubText>
               <form className='space-y-3'>
-                <Input placeholder="Enter your Email"/>
+                <Input placeholder="Enter your Email" type='email' required/>
                 <Button className='w-full'>Subscribe</Button>
               </form>
             </div>
           </div>
+          <div className='py-6 border-t text-center text-sm text-gray-600'>
+                © {new Date().getFullYear()} <Logo className='text-sm' /> All rights reserved.
+            </div>
           </Container>
         </footer>
   )
