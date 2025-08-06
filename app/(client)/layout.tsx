@@ -26,8 +26,6 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-       <html lang="en">
-      <body className={`${poppins.variable} antialiased`}>
         <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-1"> 
@@ -35,8 +33,6 @@ export default function RootLayout({
           </main>
         <Footer />
         </div>
-      </body>
-    </html>
     </ClerkProvider>
   );
 }
